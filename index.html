@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Валерия Васильева — кризис-менеджер, аудит бизнес-процессов</title>
+<meta name="description" content="Валерия Васильева: кризис-менеджмент и аудит бизнес-процессов. Проекты Skuratov Coffee и «Лайв Тайпинг» с результатами и ссылками на материалы.">
+<meta property="og:title" content="Валерия Васильева — кризис-менеджер, аудит бизнес-процессов">
+<meta property="og:description" content="Нахожу, где ломается процесс, и чиню его вместе с командой.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E98A6B'/%3E%3Ctext x='16' y='23' font-size='18' font-weight='900' text-anchor='middle' fill='%23121212' font-family='Arial'%3EВ%3C/text%3E%3C/svg%3E">
+<!-- Шрифт подключается необязательно: без интернета сработает системный. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+/* ===== НАСТРОЙКИ: цвета и шрифт ===== */
+:root{
+  --bg:#FAF6F0;        /* тёплая бумага */
+  --ink:#2B2A2A;       /* мягкий графит */
+  --muted:#5A5654;
+  --acc:#E98A6B;       /* мягкий коралл для заливок и линий */
+  --acc-t:#B04A2E;     /* акцент для текста и кнопок */
+  --tint:#F2E6DC;      /* нежная подложка */
+  --line:rgba(43,42,42,.18);
+  --f:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);background:var(--bg);color:var(--ink);font-size:clamp(1rem,.96rem + .2vw,1.08rem);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+section{padding:clamp(56px,9vw,112px) 0}
+h1,h2,h3{font-weight:700;letter-spacing:-.03em;line-height:1.05}
+h2{font-size:clamp(2rem,4.8vw,4rem);margin-bottom:.7em}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.btn{display:inline-block;background:var(--acc-t);color:#fff;font-weight:600;text-decoration:none;padding:15px 30px;border:1px solid var(--acc-t);border-radius:999px;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--acc-t)}
+.lnk{font-weight:600;text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:2px;text-underline-offset:5px}
+.lnk:hover{color:var(--acc-t)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* header */
+header{padding:20px 0;border-bottom:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.nm{font-weight:700;letter-spacing:-.02em;text-decoration:none}
+
+/* hero */
+.hero{padding-top:clamp(32px,6vw,80px)}
+.hero-grid{display:grid;gap:40px;align-items:center}
+.hero .mono{color:var(--acc-t);margin-bottom:18px;max-width:34em}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3.9rem);line-height:1.08;margin-bottom:.55em;max-width:18em}
+.lede{max-width:32em;color:var(--muted);margin-bottom:28px}
+.acts{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center}
+.frame{position:relative;width:min(72vw,340px);aspect-ratio:4/5;background:var(--tint);border-radius:16px;justify-self:center}
+.frame::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1.5px solid var(--acc);border-radius:16px;z-index:0}
+.frame .in{position:absolute;inset:0;border-radius:16px;overflow:hidden;background:var(--tint);z-index:1}
+.frame .mono-w{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(3.5rem,10vw,6rem);font-weight:700;color:var(--acc-t);letter-spacing:.04em}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (min-width:1024px){.hero-grid{grid-template-columns:1.5fr .8fr;gap:72px}.frame{width:clamp(260px,100%,400px)}}
+
+/* results */
+.band{background:var(--tint)}
+.res{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,8vw,120px);border-top:1px solid var(--line)}
+.r{padding:clamp(28px,4vw,48px) 0;border-bottom:1px solid var(--line)}
+.n{display:block;font-size:clamp(2.4rem,6.2vw,5.4rem);font-weight:700;letter-spacing:-.04em;line-height:.95;color:var(--acc-t);margin-bottom:12px;white-space:nowrap}
+.n small{font-size:.45em;letter-spacing:0}
+.r p{font-size:.95rem;color:var(--muted);max-width:18em}
+
+/* cases */
+.case{border-top:2px solid var(--acc);padding-top:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:2px 12px}
+.case h3{font-size:clamp(1.7rem,3.4vw,3rem);margin-bottom:.6em;max-width:20em}
+.k{color:var(--acc-t);margin:20px 0 6px}
+.k:first-child{margin-top:0}
+.case li{margin-left:1.1em;margin-bottom:6px}
+.lead{margin-bottom:clamp(56px,8vw,104px)}
+.lead-g{display:grid;gap:8px 56px}
+.lead b{font-weight:700}
+.team{font-size:.9rem;color:var(--muted);border-left:4px solid var(--acc);padding-left:14px;margin-top:20px;max-width:30em}
+.rest{display:grid;gap:clamp(48px,6vw,80px)}
+.ext{margin-top:20px}
+@media (min-width:768px){.rest{grid-template-columns:1fr 1fr;gap:64px}}
+@media (min-width:1024px){.lead-g{grid-template-columns:1fr 1.25fr 1fr}}
+
+/* skills */
+.sk{display:grid;gap:40px}
+.sk dl>div{padding:16px 0;border-top:1px solid var(--line)}
+.sk dt{font-weight:700}
+.sk dd{color:var(--muted)}
+.tools{margin-top:20px;font-size:.92rem;color:var(--muted)}
+@media (min-width:768px){.sk{grid-template-columns:1fr 1fr;gap:64px}}
+
+/* contact */
+.contact{background:#F7E1D5}
+.contact h2{font-size:clamp(2.2rem,6.4vw,5.6rem);max-width:11em}
+.contact p{max-width:28em;margin-bottom:26px}
+footer{padding:22px 0 32px;font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="nm" href="#top">Валерия Васильева</a>
+    <a class="lnk" href="https://t.me/vasilyeva_v" target="_blank" rel="noopener">Telegram</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="mono">Кризис-менеджер · аудит бизнес-процессов · работаю удалённо</p>
+      <h1 id="h1">Нахожу, где ломается процесс, и чиню его вместе с командой</h1>
+      <p class="lede">Провожу аудиты, которые показывают, что в компании идёт не так, и помогаю безболезненно исправить ошибки. Работаю и с теми, кто только открылся, и с теми, кто много лет борется с тем, что сложилось исторически.</p>
+      <div class="acts">
+        <a class="btn" href="#projects">Смотреть проекты</a>
+        <a class="lnk" href="https://t.me/vasilyeva_v" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </div>
+    <!-- РАМКА ПОД ФОТО: когда фото будет подтверждено, положите файл images/valeria.jpg рядом с index.html. Пока файла нет, в рамке показана монограмма. -->
+    <figure class="frame">
+      <div class="in"><div class="mono-w" aria-hidden="true">ВВ</div><img src="images/valeria.jpg" alt="Портрет Валерии Васильевой" width="800" height="1000" onerror="this.hidden=true"></div>
+    </figure>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="res-h">
+  <div class="wrap">
+    <h2 id="res-h">Результаты проектов</h2>
+    <div class="res">
+      <div class="r"><span class="n">4% → 0,7%</span><p>отмены заказов в интернет-магазине Skuratov Coffee</p></div>
+      <div class="r"><span class="n">+20%</span><p>LFL год к году, Skuratov Coffee</p></div>
+      <div class="r"><span class="n">4,8<small> из 5</small></span><p>рейтинг интернет-магазина Skuratov Coffee</p></div>
+      <div class="r"><span class="n">×2,5</span><p>лидов с сайта «Лайв Тайпинг» после обновления</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" aria-labelledby="pr-h">
+  <div class="wrap">
+    <h2 id="pr-h">Проекты</h2>
+
+    <article class="case lead">
+      <p class="mono k" style="margin-top:0">Кейс 01</p>
+      <h3>Перезагрузка интернет-магазина Skuratov Coffee</h3>
+      <div class="chips mono"><span>HoReCa / e-commerce</span><span>Коммерческий проект</span></div>
+      <div class="lead-g">
+        <div>
+          <p class="mono k">Проблема</p>
+          <p>Магазин не выполнял обещаний аудитории: ошибки в пользовательском пути, задержки и ошибки в заказах, сбои на складе и в логистике, не работали бонусы и обратная связь. Команда была без ролей и функций. Страдали конверсия, повторные покупки и отзывы, а сервис — главная ценность бренда. Магазин выпадал из его вселенной.</p>
+        </div>
+        <div>
+          <p class="mono k">Что сделала</p>
+          <ul>
+            <li><b>Команда.</b> Пересобрала состав, распределила роли, написала должностные инструкции, ввела обязательное обучение.</li>
+            <li><b>Операции.</b> Наладила производство, склад и доставку, разграничила зоны ответственности, настроила контроль качества и доработала упаковку.</li>
+            <li><b>Сайт и каталог.</b> Исправила ошибки пользовательского пути, написала требования к фото и текстам карточек, изменила товарную матрицу.</li>
+            <li><b>Обратная связь.</b> Создала систему оценок заказов гостями и настроила службу поддержки.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="mono k">Результат</p>
+          <p>Отмены заказов снизились с 4% до 0,7%, LFL год к году вырос на 20%, рейтинг магазина достиг 4,8 из 5. Магазин начали воспринимать как естественное продолжение компании в онлайне.</p>
+          <p class="team">Результаты — общий итог работы команды. Моя часть описана рядом.</p>
+          <p class="ext"><a class="lnk" href="https://app.notion.com/p/v-for-valeria-v/Skuratov-Shop-ecom-053f12e70a288228ad5b0145cad2a7a7?source=copy_link" target="_blank" rel="noopener">Подробный разбор проекта</a></p>
+        </div>
+      </div>
+    </article>
+
+    <div class="rest">
+      <article class="case">
+        <p class="mono k" style="margin-top:0">Кейс 02</p>
+        <h3>«Лайв Тайпинг»: синхронизация маркетинга и продаж</h3>
+        <div class="chips mono"><span>IT</span><span>Коммерческий проект</span></div>
+        <p class="mono k">Проблема</p>
+        <p>Отделы по-разному понимали целевого клиента, приоритетные проекты и оценку входящих запросов. Из-за этого возникали конфликты, а лидогенерация работала хуже.</p>
+        <p class="mono k">Что сделала</p>
+        <p>Организовала серию стратегических сессий, собрала точки напряжения, визуализировала взаимодействие отделов с клиентом, проанализировала систему лидогенерации и модерировала обсуждение критериев клиента и приоритетов.</p>
+        <p class="mono k">Результат</p>
+        <p>По итогам трёх встреч компания получила:</p>
+        <ul>
+          <li>портрет целевого клиента: приоритетные области, бюджет, интересные задачи;</li>
+          <li>единую базу актуального стека технологий;</li>
+          <li>общий тезаурус маркетинга и продаж.</li>
+        </ul>
+      </article>
+
+      <article class="case">
+        <p class="mono k" style="margin-top:0">Кейс 03</p>
+        <h3>Редизайн сайта студии «Лайв Тайпинг»</h3>
+        <div class="chips mono"><span>IT</span><span>Коммерческий проект</span></div>
+        <p class="mono k">Проблема</p>
+        <p>Сайт образца 2022 года не отражал позиционирование компании и проигрывал сайтам конкурентов.</p>
+        <p class="mono k">Что сделала</p>
+        <ul>
+          <li>Для страницы «Услуги» провела интервью с основателями, качественно и количественно исследовала конкурентов, согласовала тезисы с руководством и передала «скелет» страницы в дизайн.</li>
+          <li>Предложила единую структуру кейсов.</li>
+          <li>Разработала структуру и тексты главной страницы с учётом аудита, позиционирования и требований к SEO.</li>
+        </ul>
+        <p class="mono k">Результат</p>
+        <p>Лидов с сайта стало приходить в 2,5 раза больше, а шаблон кейсов ускорил их производство в 2 раза.</p>
+        <p class="ext"><a class="lnk" href="https://livetyping.com/ru/" target="_blank" rel="noopener">Посмотреть сайт</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="sk-h" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <h2 id="sk-h">Навыки</h2>
+    <div class="sk">
+      <div>
+        <p class="mono k">Soft skills</p>
+        <dl>
+          <div><dt>Организация процессов</dt><dd>Распределяю роли и зоны ответственности, выстраиваю понятный порядок работы.</dd></div>
+          <div><dt>Внимание к деталям</dt><dd>Замечаю ошибки в пользовательском пути, заказах и процессах.</dd></div>
+          <div><dt>Анализ результатов</dt><dd>Разбираю показатели и причины проблем.</dd></div>
+          <div><dt>Ясная постановка задач</dt><dd>Уточняю задачу, если чего-то не хватает, и объясняю свои решения.</dd></div>
+        </dl>
+      </div>
+      <div>
+        <p class="mono k">Hard skills</p>
+        <dl>
+          <div><dt>Исследования и аналитика</dt><dd>Исследование аудитории и конкурентов, отчёты, Яндекс Метрика.</dd></div>
+          <div><dt>Контент и тексты</dt><dd>Контент-планы, рубрики, тексты.</dd></div>
+          <div><dt>Работа с командой</dt><dd>Взаимодействие с дизайнерами и подрядчиками.</dd></div>
+          <div><dt>AI-инструменты</dt><dd>Пользуюсь в работе.</dd></div>
+        </dl>
+        <p class="tools">Инструменты: Notion, Excel / Google Sheets, Яндекс Метрика, Figma, Canva, Photoshop, CapCut, Telegram, Instagram.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" aria-labelledby="c-h">
+  <div class="wrap">
+    <h2 id="c-h">Обсудим сотрудничество</h2>
+    <p>Если у вас есть задача, связанная с процессами, командой или сервисом, напишите мне.</p>
+    <a class="btn" href="https://t.me/vasilyeva_v" target="_blank" rel="noopener">Написать в Telegram</a>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">Валерия Васильева · работаю удалённо</div></footer>
+</body>
+</html>
